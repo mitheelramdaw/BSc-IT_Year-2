@@ -27,7 +27,7 @@ public:
   }
 };
 
-class convertTemperature : public Temperature
+class ConvertTemperature : public Temperature
 {
 public:
   int toCelsius(){
@@ -38,11 +38,6 @@ public:
     celsius = 5 / 9 * (getTemperature() - 32);
     return celsius;
   };
-};
-
-class ToFahrenheit : public Temperature
-{
-public:
   int toFahrenheit(){
     int fahrenheit, inputCelsius;
     cout << "Enter a temperature in fahrenheit: ";
@@ -51,4 +46,6 @@ public:
     fahrenheit = 9 / 5 * getTemperature() + 32;
     return fahrenheit;
   };
+
+  
 };
